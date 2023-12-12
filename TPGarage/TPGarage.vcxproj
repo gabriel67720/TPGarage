@@ -153,11 +153,11 @@
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="TPGarage.cpp" />
-    <ClCompile Include="Vehiucules.cpp" />
+    <ClCompile Include="Vehicules.cpp" />
     <ClCompile Include="Voitures.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vehiucules.h" />
+    <ClInclude Include="Vehicules.h" />
     <ClInclude Include="Voitures.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
