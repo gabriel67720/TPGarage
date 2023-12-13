@@ -2,10 +2,30 @@
 //
 
 #include <iostream>
+#include "Vehicules.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	string marque1;
+	int puissance;
+	float distance;
+	Vehicules vehicule1;
+	
+	cout << "Entrez la marque du vehicule : ";
+	cin >> marque1;
+	vehicule1.setMarque(marque1);
+
+	cout << "Iniquez la puissance du vehicule :";
+	cin >> puissance;
+	vehicule1.setPuissance(puissance);
+
+	vehicule1.lire_cara();
+
+	cout << "Quelle distance voulez-vous parcourire : ";
+	cin >> distance;
+	vehicule1.parcourir(distance);
+
+	vehicule1.lire_cara();
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
