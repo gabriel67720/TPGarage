@@ -10,6 +10,7 @@ void Vehicules::lire_cara()
 	cout << "Le vehicule est un(e) " << getMarque() << endl;
 	cout << "Elle/il a " << getPuissance() << "cv" << endl;
 	cout << "Elle/il a parcouru(e) " << getKilometrage() << "Km" << endl;
+
 }
 
 string Vehicules::getMarque()

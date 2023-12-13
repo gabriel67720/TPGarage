@@ -3,30 +3,100 @@
 
 #include <iostream>
 #include "Vehicules.h"
+#include "Voitures.h"
 
 int main()
 {
 	string marque1;
 	int puissance;
 	float distance;
-	Vehicules vehicule1;
-	
+	string type;
+	char a;
+	int k;
+	Vehicules voiture1;
+	Voitures voiture2, voiture3;
+
 	cout << "Entrez la marque du vehicule : ";
 	cin >> marque1;
-	vehicule1.setMarque(marque1);
+	voiture1.setMarque(marque1);
 
-	cout << "Iniquez la puissance du vehicule :";
+	cout << "Indiquez la puissance du vehicule :";
 	cin >> puissance;
-	vehicule1.setPuissance(puissance);
+	voiture1.setPuissance(puissance);
 
-	vehicule1.lire_cara();
+	
 
-	cout << "Quelle distance voulez-vous parcourire : ";
-	cin >> distance;
-	vehicule1.parcourir(distance);
+	cout << "Voulez-vous rouler ? (O / N)";
+	cin >> a;
+	if (a == 'o') {
+		cout << "Quel distance voulez-vous parcourir ?";
+		cin >> k;
+		voiture1.parcourir(k);
+	}
 
-	vehicule1.lire_cara();
+	voiture1.lire_cara();
+
+	cout << "Entrez la marque du vehicule : ";
+	cin >> marque1;
+	voiture2.setMarque(marque1);
+
+	cout << "Indiquez la puissance du vehicule :";
+	cin >> puissance;
+	voiture2.setPuissance(puissance);
+
+	cout << "Quel est le type de la voiture ?";
+	cin >> type;
+	voiture2.setType(type);
+
+	
+	cout << "Voulez-vous rouler ? (o / n)";
+	cin >> a;
+	if (a == 'o') {
+		cout <<"Quel distance voulez-vous parcourir ?";
+		cin >> k;
+		voiture2.parcourir(k);
+	}
+
+	voiture2.lire_cara();
+
+	cout << "Entrez la marque du vehicule : ";
+	cin >> marque1;
+	voiture3.setMarque(marque1);
+
+	cout << "Indiquez la puissance du vehicule :";
+	cin >> puissance;
+	voiture3.setPuissance(puissance);
+
+	cout << "Quel est le type de la voiture ?";
+	cin >> type;
+	voiture3.setType(type);
+
+
+	cout << "Voulez-vous rouler ? (O / N)";
+	cin >> a;
+	if (a == 'o') {
+		cout << "Quel distance voulez-vous parcourir ?";
+		cin >> k;
+		voiture3.parcourir(k);
+	}
+
+	voiture3.lire_cara();
+
+
+
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
