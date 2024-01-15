@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Vehicules.h"
 #include "Voitures.h"
+#include "Bus.h"
 
 int main()
 {
@@ -13,8 +14,11 @@ int main()
 	string type;
 	char a;
 	int k;
+	int p;
+	int e;
 	Vehicules voiture1;
 	Voitures voiture2, voiture3;
+	Bus bus1;
 
 	cout << "Entrez la marque du vehicule : ";
 	cin >> marque1;
@@ -82,10 +86,15 @@ int main()
 
 	voiture3.lire_cara();
 
+	cout << "Combien de place y a t-il dans le bus ?";
+	cin >> p;
+	bus1.setPlace(p);
 
+	cout << "Combien d'essieux possede-t-il ?";
+	cin >> e;
+	bus1.setEssieux(e);
 
-	
-	
+	bus1.getCara();
 }
 
 
